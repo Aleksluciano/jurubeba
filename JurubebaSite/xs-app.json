@@ -1,12 +1,30 @@
 {
 	"routes": [{
-		"source": "/data(.*)$",
-		"destination": "api_dest",
+		"source": "/d100/data(.*)$",
+		"destination": "d100_api_dest",
 		"target": "/data"
 	}, {
-		"source": "ui_dest(.*)$",
-		"destination": "ui_dest",
+		"source": "/d100/change(.*)$",
+		"destination": "d100_api_dest",
+		"csrfProtection": false,
+		"target": "/change"
+	}, {
+		"source": "^/d100_ui_dest/(.*)$",
+		"destination": "d100_ui_dest",
+		"target": "$1"
+	},
+	{
+		"source": "/c500/data(.*)$",
+		"destination": "c500_api_dest",
+		"target": "/data"
+	}, {
+		"source": "/c500/change(.*)$",
+		"destination": "c500_api_dest",
+		"csrfProtection": false,
+		"target": "/change"
+	}, {
+		"source": "^/c500_ui_dest/(.*)$",
+		"destination": "c500_ui_dest",
 		"target": "$1"
 	}]
 }
-	

@@ -14,16 +14,16 @@ modules:
     - name: sapui5-provider
       properties:
          sapui5url: ~{url}
-    - name: ui_dest_ref
+    - name: d100_ui_ref
       group: destinations
       properties:
-        name: ui_dest
+        name: d100_ui_dest
         url: '~{url}'
         forwardAuthToken: true
-    - name: api_dest_ref
+    - name: d100_api_ref
       group: destinations
       properties:
-        name: api_dest
+        name: d100_api_dest
         url: '~{url}'
         forwardAuthToken: true
 
@@ -63,14 +63,14 @@ resources:
          siteId: jurubeba
    type: com.sap.portal.site-content
 
- - name: ui_dest_ref
+ - name: d100_ui_ref
    parameters:
-      provider-id: d100adj:ui_dest
+      provider-id: d100adj:d100_ui_dest
       version: '>=0.0.1'
       provider-nid: mta
    type: configuration
 
- - name: api_dest_ref
+ - name: d100_api_ref
    parameters:
       provider-id: d100adj:d100adj_server_api
       version: '>=0.0.1'
