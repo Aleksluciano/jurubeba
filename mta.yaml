@@ -76,5 +76,5 @@ resources:
       version: '>=0.0.1'
       provider-nid: mta
    type: configuration   
-   
+    
 
