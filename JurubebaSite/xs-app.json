@@ -1,0 +1,12 @@
+{
+	"routes": [{
+		"source": "/data(.*)$",
+		"destination": "api_dest",
+		"target": "/data"
+	}, {
+		"source": "ui_dest(.*)$",
+		"destination": "ui_dest",
+		"target": "$1"
+	}]
+}
+	
