@@ -3,16 +3,15 @@
 	"site": {
 		"_version": "1.0",
 		"identification": {
-			"id": "499c36e2-687e-11e6-8b77-86f30ca893d3",
+			"id": "Catalogo1",
 			"namespace": "",
 			"entityType": "site",
 			"description": "",
 			"i18n": "",
-			"title": "Fiori Launchpad Sample"
+			"title": "Launchpad Adejo**"
 		},
 		"payload": {
 			"groupsOrder": [
-				"5acadc20-687e-11e6-8b77-86f30ca893d3"
 			],
 			"config": {
 
@@ -27,24 +26,22 @@
 		}
 	},
 	"catalogs": {
-		"07889260-3021-4ef6-ba85-edd311738f9a": {
+				"Catalogo1": {
 			"_version": "1.1",
 			"identification": {
-				"id": "07889260-3021-4ef6-ba85-edd311738f9a",
+				"id": "Catalogo1",
 				"namespace": "",
-				"title": "{{sample_catalog_title}}",
-				"description": "{{sample_catalog_description}}",
+				"title": "Catalogo Adejo",
+				"description": "Descrição Adejo",
 				"entityType": "catalog",
 				"i18n": "i18n/i18n.properties"
 			},
 			"payload": {
 				"appDescriptors": [{
 					"namespace": "",
-					"id": "6ef9cdd2-687e-11e6-8b77-86f30ca893d3"
-				}, {
-					"namespace": "",
-					"id": "73c3f80a-5245-4e6c-a51d-d9436b1cb530"
-				}]
+					"id": "d100adj_ui"
+				}
+				]
 			}
 		}
 	},
@@ -60,9 +57,7 @@
 				"catalogs": [
 
 				],
-				"groups": [{
-					"id": "5acadc20-687e-11e6-8b77-86f30ca893d3"
-				}]
+				"groups": []
 			}
 		}
 	},
@@ -70,39 +65,7 @@
 
 	},
 	"groups": {
-		"5acadc20-687e-11e6-8b77-86f30ca893d3": {
-			"identification": {
-				"id": "5acadc20-687e-11e6-8b77-86f30ca893d3",
-				"i18n": "i18n/i18n.properties",
-				"namespace": "",
-				"title": "{{group_title}}"
-			},
-			"payload": {
-				"tiles": [{
-					"id": "mySapTile",
-					"appId": "73c3f80a-5245-4e6c-a51d-d9436b1cb530",
-					"entityType": "tile",
-					"target": {
-						"semanticObject": "Sap",
-						"action": "show",
-						"parameters": [
 
-						]
-					}
-				}, {
-					"id": "myUi5Tile",
-					"appId": "6ef9cdd2-687e-11e6-8b77-86f30ca893d3",
-					"entityType": "tile",
-					"target": {
-						"semanticObject": "app",
-						"action": "show",
-						"parameters": [
-
-						]
-					}
-				}]
-			}
-		}
 	},
 	"siteThemes": {
 		"sap_hcb": {
