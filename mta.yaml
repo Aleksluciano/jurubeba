@@ -26,6 +26,18 @@ modules:
         name: d100_api_dest
         url: '~{url}'
         forwardAuthToken: true
+    - name: c500_ui_ref
+      group: destinations
+      properties:
+        name: c500_ui_dest
+        url: '~{url}'
+        forwardAuthToken: true
+    - name: c500_api_ref
+      group: destinations
+      properties:
+        name: c500_api_dest
+        url: '~{url}'
+        forwardAuthToken: true
 
  - name: JurubebaSite-Content-jurubeba
    type: sitecontent
@@ -75,6 +87,20 @@ resources:
       provider-id: d100adj:d100adj_server_api
       version: '>=0.0.1'
       provider-nid: mta
-   type: configuration   
+   type: configuration  
+   
+ - name: c500_ui_ref
+   parameters:
+      provider-id: c500adj:c500_ui_dest
+      version: '>=0.0.1'
+      provider-nid: mta
+   type: configuration
+
+ - name: c500_api_ref
+   parameters:
+      provider-id: c500adj:c500adj_server_api
+      version: '>=0.0.1'
+      provider-nid: mta
+   type: configuration 
     
 
