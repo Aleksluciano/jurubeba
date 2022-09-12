@@ -1,6 +1,6 @@
 ID: jurubeba
 _schema-version: '2.1'
-version: 0.0.8
+version: 0.0.9
 
 modules:
  - name: JurubebaSite-jurubeba

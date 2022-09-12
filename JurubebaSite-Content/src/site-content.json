@@ -40,6 +40,10 @@
 				"appDescriptors": [{
 					"namespace": "",
 					"id": "d100adj_ui"
+				},
+				{
+					"namespace": "",
+					"id": "c500adj_ui"
 				}
 				]
 			}
